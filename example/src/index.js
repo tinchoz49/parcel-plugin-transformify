@@ -5,3 +5,5 @@ const prefix = css`
     text-align: center;
   }
 `
+
+console.log(prefix);
