@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 0",
-    "posttest": "standard src/**/*.js __tests__/index.js",
+    "posttest": "standard lib/**/*.js __tests__/index.js",
     "version": "chan release ${npm_package_version} && git add .",
     "prepublish": "npm test"
   },

@@ -1,9 +1,20 @@
 const css = require('sheetify')
 
-const prefix = css`
-  :host > h1 {
-    text-align: center;
+const box1 = css`
+  :host {
+    background: red;
+    width: 100px;
+    height: 100px;
   }
 `
 
-console.log(prefix);
+const box2 = css`
+  :host {
+    background: blue;
+    width: 100px;
+    height: 100px;
+  }
+`
+
+document.getElementById('box1').classList.add(box1)
+document.getElementById('box2').classList.add(box2)
