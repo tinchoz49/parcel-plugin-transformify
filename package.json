@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Parcel plugin to run browserify transforms",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "test": "jest --detectOpenHandles",
     "posttest": "standard lib/**/*.js __tests__/index.js",
