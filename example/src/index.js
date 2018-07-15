@@ -1,4 +1,5 @@
 const css = require('sheetify')
+const test = require('./module')
 
 const box1 = css`
   :host {

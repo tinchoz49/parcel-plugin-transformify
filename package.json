@@ -43,6 +43,7 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
+    "convert-source-map": "^1.5.1",
     "multipipe": "^2.0.3",
     "resolve": "^1.8.1",
     "source-map-url": "^0.4.0",
