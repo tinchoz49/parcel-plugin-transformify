@@ -7,7 +7,7 @@
     "test": "jest --detectOpenHandles",
     "posttest": "standard lib/**/*.js __tests__/index.js",
     "version": "chan release ${npm_package_version} && git add .",
-    "prepublish": "npm test"
+    "prepare": "npm test"
   },
   "repository": {
     "type": "git",
