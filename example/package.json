@@ -15,11 +15,15 @@
     "parcel-plugin-transformify": "file:.."
   },
   "dependencies": {
+    "hyperscript": "^2.0.2",
+    "hyperx": "^2.4.0",
+    "hyperxify": "^2.0.1",
     "sheetify": "^7.3.2"
   },
   "browserify": {
     "transform": [
-      "sheetify"
+      "sheetify",
+      "hyperxify"
     ]
   }
 }

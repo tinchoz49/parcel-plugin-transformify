@@ -1,21 +1,26 @@
+const h = require('hyperscript')
+const hyperx = require('hyperx')
 const css = require('sheetify')
-const test = require('./module')
+const hx = hyperx(h)
 
-const box1 = css`
-  :host {
+const prefix = css`
+  :host > div {
+    width: 100px;
+    height: 100px;
+  }
+
+  :host > .red {
     background: red;
-    width: 100px;
-    height: 100px;
   }
-`
 
-const box2 = css`
-  :host {
+  :host > .blue {
     background: blue;
-    width: 100px;
-    height: 100px;
   }
 `
 
-document.getElementById('box1').classList.add(box1)
-document.getElementById('box2').classList.add(box2)
+const tree = hx`<div class="${prefix}">
+  <div class="red"></div>
+  <div class="blue"></div>
+</div>`
+
+document.getElementById('root').innerHTML = tree.outerHTML
