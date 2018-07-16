@@ -12,7 +12,6 @@ describe('#initialization', () => {
   transformifyPlugin(bundler)
 
   const jsAsset = 'parcel-plugin-transformify/lib/js-asset'
-  const tsAsset = 'parcel-plugin-transformify/lib/ts-asset'
 
   it('transformify plugin should be a function', () =>
     expect(typeof transformifyPlugin).toBe('function'))
@@ -27,8 +26,6 @@ describe('#initialization', () => {
     expect(bundler.parser.extensions['.jsm'].includes(jsAsset)).toBeTruthy())
   it('transformify define TransformifyAsset as the mjs asset', () =>
     expect(bundler.parser.extensions['.mjs'].includes(jsAsset)).toBeTruthy())
-  it('transformify define TransformifyAsset as the tsx asset', () =>
-    expect(bundler.parser.extensions['.tsx'].includes(tsAsset)).toBeTruthy())
 })
 
 describe('#transform', () => {
